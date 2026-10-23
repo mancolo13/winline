@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:app_/models/quiz_models.dart';
-import 'package:app_/screens/main_stub_screen.dart';
-import 'package:app_/screens/quiz_play_screen.dart';
-import 'package:app_/screens/word_puzzle_screen.dart';
-import 'package:app_/screens/tabs/match_center_tab.dart';
-import 'package:app_/screens/tabs/quiz_hub_tab.dart';
-import 'package:app_/screens/tabs/daily_challenges_tab.dart';
-import 'package:app_/screens/tabs/loyalty_profile_tab.dart';
-import 'package:app_/services/quiz_service.dart';
-import 'package:app_/theme/app_theme.dart';
+import 'package:winline/models/quiz_models.dart';
+import 'package:winline/screens/main_stub_screen.dart';
+import 'package:winline/screens/quiz_play_screen.dart';
+import 'package:winline/screens/word_puzzle_screen.dart';
+import 'package:winline/screens/tabs/match_center_tab.dart';
+import 'package:winline/screens/tabs/quiz_hub_tab.dart';
+import 'package:winline/screens/tabs/daily_challenges_tab.dart';
+import 'package:winline/screens/tabs/loyalty_profile_tab.dart';
+import 'package:winline/services/quiz_service.dart';
+import 'package:winline/theme/app_theme.dart';
 
 void main() {
   setUp(() async {
@@ -18,33 +18,33 @@ void main() {
     service.categories = [
       QuizCategory(
         id: 'clubs_derbies',
-        title: 'Clubs & Epic Derbies',
-        description: 'Historical rivalries and trophies',
+        title: 'Клубы и Дерби РПЛ',
+        description: 'Исторические противостояния и трофеи',
         icon: 'shield',
         accentColor: '#FF5500',
         questions: [
           QuizQuestion(
             id: 101,
-            question: 'Which fixture is known as the Main Moscow Derby?',
-            options: ['Spartak vs CSKA', 'Zenit vs Dynamo', 'Lokomotiv vs Rostov', 'Krasnodar vs Rubin'],
+            question: 'Какое противостояние называют Главным московским дерби?',
+            options: ['Спартак vs ЦСКА', 'Зенит vs Динамо', 'Локомотив vs Ростов', 'Краснодар vs Рубин'],
             correctIndex: 0,
-            explanation: 'The classic battle between Spartak and CSKA is the Main Moscow Derby.',
+            explanation: 'Классическое сражение между Спартаком и ЦСКА — Главное московское дерби.',
             points: 100,
           ),
           QuizQuestion(
             id: 102,
-            question: 'Which club is known as The Armymen?',
-            options: ['The Bulls', 'The Gladiators', 'The Armymen', 'The Railwaymen'],
+            question: 'Какой клуб традиционно называют Армейцами?',
+            options: ['Быки', 'Гладиаторы', 'Армейцы', 'Железнодорожники'],
             correctIndex: 2,
-            explanation: 'CSKA has historic military roots.',
+            explanation: 'ЦСКА имеет армейское историческое происхождение.',
             points: 100,
           ),
         ],
         words: [
           WordPuzzle(
-            word: 'DERBY',
-            hint: 'A clash between two local rivals',
-            difficulty: 'Easy',
+            word: 'ДЕРБИ',
+            hint: 'Принципиальный матч между двумя соперниками',
+            difficulty: 'Легко',
             points: 100,
           ),
         ],
@@ -54,27 +54,27 @@ void main() {
     service.liveMatches = [
       LiveMatch(
         id: 'match_101',
-        homeTeam: 'Zenit St. Petersburg',
-        awayTeam: 'Spartak Moscow',
+        homeTeam: 'Зенит Санкт-Петербург',
+        awayTeam: 'Спартак Москва',
         homeScore: 2,
         awayScore: 1,
         minute: "68'",
         status: 'LIVE',
-        stadium: 'Gazprom Arena, St. Petersburg',
-        attendance: '51,200',
-        possession: '58% - 42%',
-        shotsOnTarget: '7 - 4',
-        corners: '5 - 3',
-        highlights: ["18' GOAL: Volley (1-0)", "41' GOAL: Counter (1-1)"],
-        matchTrivia: 'Over 160 league clashes between these two clubs.',
+        stadium: 'Газпром Арена, Санкт-Петербург',
+        attendance: '51 200',
+        possession: '58% — 42%',
+        shotsOnTarget: '7 — 4',
+        corners: '5 — 3',
+        highlights: ["18' ГОЛ (1:0)", "41' ГОЛ (1:1)"],
+        matchTrivia: 'Более 160 матчей между этими клубами.',
       ),
     ];
 
     service.dailyChallenges = [
       DailyChallenge(
         id: 'daily_1',
-        title: 'Matchday Trivia Master',
-        description: 'Answer 5 trivia questions correctly',
+        title: 'Знаток Матчдэя',
+        description: 'Ответьте правильно на 5 вопросов',
         rewardPoints: 250,
         progressTarget: 5,
         icon: 'military_tech',
@@ -84,16 +84,16 @@ void main() {
     service.loyaltyStore = [
       LoyaltyReward(
         id: 'reward_vip_pass',
-        title: 'VIP Match Pass Badge',
+        title: 'Бейдж VIP Матч-Пасс',
         cost: 500,
         icon: 'confirmation_number',
-        description: 'Digital VIP pass badge granting match center priority.',
+        description: 'Цифровой VIP-бейдж с приоритетом в матч-центре.',
       ),
     ];
 
     service.fanRanks = [
-      FanRank(title: 'Rookie Supporter', minPoints: 0, perk: 'Standard access'),
-      FanRank(title: 'Season Ticket Holder', minPoints: 500, perk: '+10% bonus points'),
+      FanRank(title: 'Новичок Трибун', minPoints: 0, perk: 'Стандартный доступ'),
+      FanRank(title: 'Владелец Абонемента', minPoints: 500, perk: '+10% бонусных очков'),
     ];
 
     service.isLoaded = true;
@@ -117,28 +117,28 @@ void main() {
 
       final navBar = tester.widget<BottomNavigationBar>(navBarFinder);
       expect(navBar.items.length, 4);
-      expect(navBar.items[0].label, 'Match Center');
-      expect(navBar.items[1].label, 'Quizzes');
-      expect(navBar.items[2].label, 'Daily');
-      expect(navBar.items[3].label, 'Loyalty');
+      expect(navBar.items[0].label, 'Матч-центр');
+      expect(navBar.items[1].label, 'Викторины');
+      expect(navBar.items[2].label, 'Задания');
+      expect(navBar.items[3].label, 'Лояльность');
 
       // Verify first tab (Match Center) is active
-      expect(find.text('MATCH CENTER'), findsWidgets);
+      expect(find.text('МАТЧ-ЦЕНТР'), findsWidgets);
 
       // Switch to Quizzes tab (index 1)
-      await tester.tap(find.text('Quizzes'));
+      await tester.tap(find.text('Викторины'));
       await tester.pumpAndSettle();
-      expect(find.text('RPL QUIZ HUB'), findsOneWidget);
+      expect(find.text('ВИКТОРИНЫ РПЛ'), findsOneWidget);
 
       // Switch to Daily tab (index 2)
-      await tester.tap(find.text('Daily'));
+      await tester.tap(find.text('Задания'));
       await tester.pumpAndSettle();
-      expect(find.text('DAILY CHALLENGES'), findsOneWidget);
+      expect(find.text('ЕЖЕДНЕВНЫЕ ЗАДАНИЯ'), findsOneWidget);
 
       // Switch to Loyalty tab (index 3)
-      await tester.tap(find.text('Loyalty'));
+      await tester.tap(find.text('Лояльность'));
       await tester.pumpAndSettle();
-      expect(find.text('LOYALTY & PROFILE'), findsOneWidget);
+      expect(find.text('ЛОЯЛЬНОСТЬ И ПРОФИЛЬ'), findsOneWidget);
     });
   });
 
@@ -190,15 +190,15 @@ void main() {
       await tester.pumpAndSettle();
 
       // Check question text is rendered
-      expect(find.text('Which fixture is known as the Main Moscow Derby?'), findsOneWidget);
-      expect(find.text('Spartak vs CSKA'), findsOneWidget);
+      expect(find.text('Какое противостояние называют Главным московским дерби?'), findsOneWidget);
+      expect(find.text('Спартак vs ЦСКА'), findsOneWidget);
 
       // Tap first option
-      await tester.tap(find.text('Spartak vs CSKA'));
+      await tester.tap(find.text('Спартак vs ЦСКА'));
       await tester.pumpAndSettle();
 
       // Verify explanation appeared and Next button is active
-      final nextBtn = find.text('Next Question');
+      final nextBtn = find.text('Следующий вопрос');
       expect(nextBtn, findsOneWidget);
 
       // Scroll to Next Question button if needed and tap
@@ -208,7 +208,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify question 2 appeared
-      expect(find.text('Which club is known as The Armymen?'), findsOneWidget);
+      expect(find.text('Какой клуб традиционно называют Армейцами?'), findsOneWidget);
     });
 
     testWidgets('WordPuzzleScreen renders keyboard, letter boxes and accepts input', (tester) async {
@@ -216,11 +216,11 @@ void main() {
       await tester.pumpWidget(buildTestableWidget(WordPuzzleScreen(words: words)));
       await tester.pumpAndSettle();
 
-      expect(find.text('Football Word Guesser'), findsOneWidget);
-      expect(find.text('A clash between two local rivals'), findsOneWidget);
+      expect(find.text('Футбольные Слова'), findsOneWidget);
+      expect(find.text('Принципиальный матч между двумя соперниками'), findsOneWidget);
 
-      // Tap key 'D'
-      final keyD = find.widgetWithText(InkWell, 'D');
+      // Tap Cyrillic key 'Д'
+      final keyD = find.widgetWithText(InkWell, 'Д');
       expect(keyD, findsWidgets);
       await tester.tap(keyD.first);
       await tester.pumpAndSettle();

@@ -53,7 +53,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                 const SizedBox(width: 8),
                 Flexible(
                   child: Text(
-                    'MATCH CENTER',
+                    'МАТЧ-ЦЕНТР',
                     style: GoogleFonts.outfit(
                       fontSize: 18,
                       fontWeight: FontWeight.w800,
@@ -142,7 +142,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'PREMIER LEAGUE HUB',
+                                'ПРЕМЬЕР-ЛИГА',
                                 style: GoogleFonts.inter(
                                   fontSize: 11,
                                   fontWeight: FontWeight.w800,
@@ -152,7 +152,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                               ),
                               const SizedBox(height: 2),
                               Text(
-                                'Matchday Live Center & Stats',
+                                'Матч-центр и статистика тура',
                                 style: GoogleFonts.outfit(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -161,7 +161,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                               ),
                               const SizedBox(height: 2),
                               Text(
-                                'Follow games, predict outcomes & earn loyalty',
+                                'Следи за играми, делай прогнозы и получай баллы',
                                 style: GoogleFonts.inter(
                                   fontSize: 12,
                                   color: AppTheme.textSecondary,
@@ -180,10 +180,10 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        _buildFilterChip('ALL', 'All Fixtures'),
-                        _buildFilterChip('LIVE', 'Live In-Play'),
-                        _buildFilterChip('UPCOMING', 'Upcoming'),
-                        _buildFilterChip('FINISHED', 'Finished'),
+                        _buildFilterChip('ALL', 'Все матчи'),
+                        _buildFilterChip('LIVE', 'Прямой эфир'),
+                        _buildFilterChip('UPCOMING', 'Предстоящие'),
+                        _buildFilterChip('FINISHED', 'Завершенные'),
                       ],
                     ),
                   ),
@@ -195,7 +195,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                       padding: const EdgeInsets.all(32),
                       alignment: Alignment.center,
                       child: Text(
-                        'No matches found for this filter.',
+                        'Матчей по данному фильтру не найдено.',
                         style: GoogleFonts.inter(color: AppTheme.textSecondary),
                       ),
                     )
@@ -249,6 +249,15 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
     if (isLive) statusColor = AppTheme.accentEmerald;
     if (isFinished) statusColor = AppTheme.textMuted;
 
+    String displayStatus = match.status;
+    if (isLive) {
+      displayStatus = 'ЭФИР • ${match.minute}';
+    } else if (isFinished) {
+      displayStatus = 'ЗАВЕРШЕН';
+    } else if (match.status == 'UPCOMING') {
+      displayStatus = 'СКОРО';
+    }
+
     return Container(
       margin: const EdgeInsets.only(bottom: 14),
       decoration: BoxDecoration(
@@ -291,7 +300,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                           const SizedBox(width: 6),
                         ],
                         Text(
-                          isLive ? 'LIVE • ${match.minute}' : match.status,
+                          displayStatus,
                           style: GoogleFonts.inter(
                             fontSize: 11,
                             fontWeight: FontWeight.w700,
@@ -380,7 +389,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Possession: ${match.possession}',
+                      'Владение: ${match.possession}',
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         color: AppTheme.textSecondary,
@@ -394,7 +403,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'Details & Predict',
+                        'Матч и прогноз',
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
@@ -485,7 +494,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                               const Icon(Icons.psychology_rounded, color: AppTheme.primary, size: 18),
                               const SizedBox(width: 8),
                               Text(
-                                'Matchday Predictor (+50 pts)',
+                                'Прогноз на матч (+50 баллов)',
                                 style: GoogleFonts.outfit(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
@@ -498,7 +507,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                           Row(
                             children: [
                               _buildPredictButton(
-                                label: '1 (Home)',
+                                label: '1 (Хозяева)',
                                 choice: 'HOME',
                                 currentChoice: userPrediction,
                                 onSelect: () {
@@ -508,7 +517,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                               ),
                               const SizedBox(width: 8),
                               _buildPredictButton(
-                                label: 'X (Draw)',
+                                label: 'X (Ничья)',
                                 choice: 'DRAW',
                                 currentChoice: userPrediction,
                                 onSelect: () {
@@ -518,7 +527,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                               ),
                               const SizedBox(width: 8),
                               _buildPredictButton(
-                                label: '2 (Away)',
+                                label: '2 (Гости)',
                                 choice: 'AWAY',
                                 currentChoice: userPrediction,
                                 onSelect: () {
@@ -535,7 +544,7 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
 
                     // Key Stats
                     Text(
-                      'MATCH STATISTICS',
+                      'СТАТИСТИКА МАТЧА',
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         fontWeight: FontWeight.w800,
@@ -544,14 +553,14 @@ class _MatchCenterTabState extends State<MatchCenterTab> {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    _buildStatRow('Ball Possession', match.possession),
-                    _buildStatRow('Shots on Target', match.shotsOnTarget),
-                    _buildStatRow('Corner Kicks', match.corners),
+                    _buildStatRow('Владение мячом', match.possession),
+                    _buildStatRow('Удары в створ', match.shotsOnTarget),
+                    _buildStatRow('Угловые', match.corners),
                     const SizedBox(height: 18),
 
                     // Match Incidents Timeline
                     Text(
-                      'KEY EVENTS',
+                      'ХРОНИКА СОБЫТИЙ',
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         fontWeight: FontWeight.w800,

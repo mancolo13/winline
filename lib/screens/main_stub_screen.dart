@@ -87,22 +87,22 @@ class _MainStubScreenState extends State<MainStubScreen> {
             BottomNavigationBarItem(
               icon: Icon(Icons.sports_soccer_rounded),
               activeIcon: Icon(Icons.sports_soccer_rounded, color: AppTheme.primary),
-              label: 'Match Center',
+              label: 'Матч-центр',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.quiz_rounded),
               activeIcon: Icon(Icons.quiz_rounded, color: AppTheme.primary),
-              label: 'Quizzes',
+              label: 'Викторины',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.emoji_events_rounded),
               activeIcon: Icon(Icons.emoji_events_rounded, color: AppTheme.primary),
-              label: 'Daily',
+              label: 'Задания',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.stars_rounded),
               activeIcon: Icon(Icons.stars_rounded, color: AppTheme.primary),
-              label: 'Loyalty',
+              label: 'Лояльность',
             ),
           ],
         ),

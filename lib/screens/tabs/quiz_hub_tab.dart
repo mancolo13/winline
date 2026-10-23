@@ -62,7 +62,7 @@ class QuizHubTab extends StatelessWidget {
                 const SizedBox(width: 8),
                 Flexible(
                   child: Text(
-                    'RPL QUIZ HUB',
+                    'ВИКТОРИНЫ РПЛ',
                     style: GoogleFonts.outfit(
                       fontSize: 18,
                       fontWeight: FontWeight.w800,
@@ -133,7 +133,7 @@ class QuizHubTab extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(6),
                                 ),
                                 child: Text(
-                                  'FEATURED MODE',
+                                  'ТОП РЕЖИМ',
                                   style: GoogleFonts.inter(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w900,
@@ -147,7 +147,7 @@ class QuizHubTab extends StatelessWidget {
                               const SizedBox(width: 4),
                               Flexible(
                                 child: Text(
-                                  'Up to 200 pts/word',
+                                  'До 200 баллов/слово',
                                   style: GoogleFonts.inter(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
@@ -160,7 +160,7 @@ class QuizHubTab extends StatelessWidget {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'Football Word Master',
+                            'Футбольные Слова',
                             style: GoogleFonts.outfit(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class QuizHubTab extends StatelessWidget {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            'Guess clubs, derbies, tactics and nicknames letter by letter before lives run out.',
+                            'Отгадывай футбольные термины, клубы и прозвища буква за буквой.',
                             style: GoogleFonts.inter(
                               fontSize: 13,
                               color: AppTheme.textSecondary,
@@ -196,7 +196,7 @@ class QuizHubTab extends StatelessWidget {
                               ),
                               icon: const Icon(Icons.play_arrow_rounded, size: 22),
                               label: Text(
-                                'Play Word Guesser (${wordPuzzles.length} Words)',
+                                'Играть в слова (${wordPuzzles.length} слов)',
                                 style: GoogleFonts.outfit(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -216,7 +216,7 @@ class QuizHubTab extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          'RPL TRIVIA CATEGORIES',
+                          'КАТЕГОРИИ ВИКТОРИН',
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w800,
@@ -229,7 +229,7 @@ class QuizHubTab extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Text(
-                        '${triviaCategories.length} Categories',
+                        '${triviaCategories.length} раздела',
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
@@ -316,7 +316,7 @@ class QuizHubTab extends StatelessWidget {
                                             borderRadius: BorderRadius.circular(6),
                                           ),
                                           child: Text(
-                                            '${category.questions.length} Questions',
+                                            '${category.questions.length} вопросов',
                                             style: GoogleFonts.inter(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w600,
@@ -325,7 +325,7 @@ class QuizHubTab extends StatelessWidget {
                                           ),
                                         ),
                                         Text(
-                                          'Earn +${category.questions.fold<int>(0, (sum, q) => sum + q.points)} pts',
+                                          'До +${category.questions.fold<int>(0, (sum, q) => sum + q.points)} баллов',
                                           style: GoogleFonts.inter(
                                             fontSize: 11,
                                             color: AppTheme.accentGold,

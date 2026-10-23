@@ -88,7 +88,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
               ),
               const SizedBox(height: 18),
               Text(
-                'Quiz Completed!',
+                'Викторина завершена!',
                 style: GoogleFonts.outfit(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -98,7 +98,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                'You scored $_correctCount out of $total ($percent%)',
+                'Правильных ответов: $_correctCount из $total ($percent%)',
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   color: AppTheme.textSecondary,
@@ -119,7 +119,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                     const Icon(Icons.stars_rounded, color: AppTheme.accentGold, size: 24),
                     const SizedBox(width: 8),
                     Text(
-                      '+$_pointsEarned Loyalty Points',
+                      '+$_pointsEarned очков лояльности',
                       style: GoogleFonts.outfit(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -146,7 +146,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                     ),
                   ),
                   child: Text(
-                    'Return to Hub',
+                    'Вернуться в меню',
                     style: GoogleFonts.outfit(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -202,7 +202,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                 const Icon(Icons.stars_rounded, color: AppTheme.accentGold, size: 18),
                 const SizedBox(width: 4),
                 Text(
-                  '+${question.points} pts',
+                  '+${question.points} баллов',
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
@@ -225,7 +225,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Question ${_currentIndex + 1} of ${_questions.length}',
+                    'Вопрос ${_currentIndex + 1} из ${_questions.length}',
                     style: GoogleFonts.inter(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
@@ -233,7 +233,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                     ),
                   ),
                   Text(
-                    'Score: $_correctCount',
+                    'Верно: $_correctCount',
                     style: GoogleFonts.inter(
                       fontSize: 13,
                       fontWeight: FontWeight.w700,
@@ -275,7 +275,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Text(
-                            'MATCH TRIVIA',
+                            'ВОПРОС ТУРА',
                             style: GoogleFonts.inter(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
@@ -434,7 +434,7 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                     elevation: 4,
                   ),
                   child: Text(
-                    _currentIndex < _questions.length - 1 ? 'Next Question' : 'View Results',
+                    _currentIndex < _questions.length - 1 ? 'Следующий вопрос' : 'Посмотреть результаты',
                     style: GoogleFonts.outfit(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

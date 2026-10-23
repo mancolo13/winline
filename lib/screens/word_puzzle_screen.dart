@@ -108,7 +108,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                'All Words Solved!',
+                'Все слова отгаданы!',
                 style: GoogleFonts.outfit(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                'You mastered all football terms in this set!',
+                'Вы успешно отгадали все футбольные термины тура!',
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   color: AppTheme.textSecondary,
@@ -137,7 +137,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                     const Icon(Icons.stars_rounded, color: AppTheme.accentGold, size: 24),
                     const SizedBox(width: 8),
                     Text(
-                      '+$_totalPointsEarned Loyalty Points',
+                      '+$_totalPointsEarned очков лояльности',
                       style: GoogleFonts.outfit(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -164,7 +164,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                     ),
                   ),
                   child: Text(
-                    'Return to Hub',
+                    'Вернуться в меню',
                     style: GoogleFonts.outfit(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -184,27 +184,34 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
     if (widget.words.isEmpty) {
       return Scaffold(
         backgroundColor: AppTheme.background,
-        appBar: AppBar(title: const Text('Football Words')),
+        appBar: AppBar(title: const Text('Футбольные Слова')),
         body: const Center(
           child: Text(
-            'No word puzzles found in data.',
+            'Слова для игры пока не добавлены.',
             style: TextStyle(color: AppTheme.textSecondary),
           ),
         ),
       );
     }
 
-    const keyboardRows = [
-      ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
-      ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
-      ['Z', 'X', 'C', 'V', 'B', 'N', 'M'],
-    ];
+    final bool isRussian = RegExp(r'[А-ЯЁ]').hasMatch(_targetWord);
+    final keyboardRows = isRussian
+        ? [
+            ['Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ'],
+            ['Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э'],
+            ['Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю'],
+          ]
+        : [
+            ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+            ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
+            ['Z', 'X', 'C', 'V', 'B', 'N', 'M'],
+          ];
 
     return Scaffold(
       backgroundColor: AppTheme.background,
       appBar: AppBar(
         title: Text(
-          'Football Word Guesser',
+          'Футбольные Слова',
           style: GoogleFonts.outfit(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         actions: [
@@ -245,7 +252,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Word ${_wordIndex + 1} of ${widget.words.length}',
+                    'Слово ${_wordIndex + 1} из ${widget.words.length}',
                     style: GoogleFonts.inter(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
@@ -293,7 +300,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Text(
-                            'FOOTBALL CLUE',
+                            'ПОДСКАЗКА',
                             style: GoogleFonts.inter(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
@@ -387,7 +394,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          'Correct! +${_currentPuzzle.points} pts added!',
+                          'Верно! +${_currentPuzzle.points} баллов!',
                           style: GoogleFonts.inter(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -403,7 +410,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                           minimumSize: Size.zero,
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         ),
-                        child: const Text('Next Word', style: TextStyle(color: Colors.white)),
+                        child: const Text('Следующее', style: TextStyle(color: Colors.white)),
                       ),
                     ],
                   ),
@@ -423,7 +430,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          'Word was: $_targetWord',
+                          'Слово было: $_targetWord',
                           style: GoogleFonts.inter(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -439,7 +446,7 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                           minimumSize: Size.zero,
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         ),
-                        child: const Text('Try Again', style: TextStyle(color: Colors.white)),
+                        child: const Text('Заново', style: TextStyle(color: Colors.white)),
                       ),
                     ],
                   ),
@@ -447,62 +454,65 @@ class _WordPuzzleScreenState extends State<WordPuzzleScreen> {
                 const SizedBox(height: 14),
               ],
 
-              // Virtual Keyboard
+              // Virtual Keyboard (Scaled cleanly with FittedBox to prevent any overflow)
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Column(
                   children: keyboardRows.map((row) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 6),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: row.map((letter) {
-                          final isGuessed = _guessedLetters.contains(letter);
-                          final isCorrect = isGuessed && _targetWord.contains(letter);
-                          final isWrong = isGuessed && !_targetWord.contains(letter);
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: row.map((letter) {
+                            final isGuessed = _guessedLetters.contains(letter);
+                            final isCorrect = isGuessed && _targetWord.contains(letter);
+                            final isWrong = isGuessed && !_targetWord.contains(letter);
 
-                          Color keyBg = AppTheme.surfaceCard;
-                          Color keyColor = AppTheme.textPrimary;
-                          if (isCorrect) {
-                            keyBg = AppTheme.accentEmerald.withAlpha(60);
-                            keyColor = Colors.white;
-                          } else if (isWrong) {
-                            keyBg = AppTheme.surfaceBorder.withAlpha(40);
-                            keyColor = AppTheme.textMuted;
-                          }
+                            Color keyBg = AppTheme.surfaceCard;
+                            Color keyColor = AppTheme.textPrimary;
+                            if (isCorrect) {
+                              keyBg = AppTheme.accentEmerald.withAlpha(60);
+                              keyColor = Colors.white;
+                            } else if (isWrong) {
+                              keyBg = AppTheme.surfaceBorder.withAlpha(40);
+                              keyColor = AppTheme.textMuted;
+                            }
 
-                          return Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 2.5),
-                            child: InkWell(
-                              onTap: isGuessed || _isWordSolved || _isGameOver
-                                  ? null
-                                  : () => _onLetterPressed(letter),
-                              borderRadius: BorderRadius.circular(6),
-                              child: Container(
-                                width: 28,
-                                height: 42,
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(
-                                  color: keyBg,
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(
-                                    color: isGuessed
-                                        ? Colors.transparent
-                                        : AppTheme.surfaceBorder,
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                              child: InkWell(
+                                onTap: isGuessed || _isWordSolved || _isGameOver
+                                    ? null
+                                    : () => _onLetterPressed(letter),
+                                borderRadius: BorderRadius.circular(6),
+                                child: Container(
+                                  width: isRussian ? 24 : 28,
+                                  height: 42,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    color: keyBg,
+                                    borderRadius: BorderRadius.circular(6),
+                                    border: Border.all(
+                                      color: isGuessed
+                                          ? Colors.transparent
+                                          : AppTheme.surfaceBorder,
+                                    ),
                                   ),
-                                ),
-                                child: Text(
-                                  letter,
-                                  style: GoogleFonts.inter(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: keyColor,
+                                  child: Text(
+                                    letter,
+                                    style: GoogleFonts.inter(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w600,
+                                      color: keyColor,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          );
-                        }).toList(),
+                            );
+                          }).toList(),
+                        ),
                       ),
                     );
                   }).toList(),

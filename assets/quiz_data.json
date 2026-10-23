@@ -1,348 +1,348 @@
 {
   "app_info": {
-    "title": "Match Center Pro",
-    "subtitle": "Premier League Match Hub & Loyalty",
-    "theme": "RPL Football Match Center & Loyalty",
-    "language": "en",
+    "title": "Матч-Центр Про",
+    "subtitle": "Матч-центр Премьер-Лиги и программа лояльности",
+    "theme": "Футбольный Матч-Центр РПЛ и Квиз",
+    "language": "ru",
     "version": "1.0.0"
   },
   "categories": [
     {
       "id": "clubs_derbies",
-      "title": "Clubs & Epic Derbies",
-      "description": "Historical rivalries, iconic clubs, trophies, and legendary clashes",
+      "title": "Клубы и Дерби РПЛ",
+      "description": "Исторические противостояния, легендарные клубы, трофеи и дерби",
       "icon": "shield",
       "accent_color": "#FF5500",
       "questions": [
         {
           "id": 101,
-          "question": "Which historic fixture is traditionally known as the 'Main Moscow Derby'?",
+          "question": "Какое историческое противостояние традиционно называют «Главным московским дерби»?",
           "options": [
-            "Spartak Moscow vs CSKA Moscow",
-            "Zenit St. Petersburg vs Dynamo Moscow",
-            "Lokomotiv Moscow vs Rostov",
-            "Krasnodar vs Rubin Kazan"
+            "Спартак Москва — ЦСКА Москва",
+            "Зенит Санкт-Петербург — Динамо Москва",
+            "Локомотив Москва — Ростов",
+            "Краснодар — Рубин Казань"
           ],
           "correct_index": 0,
-          "explanation": "The battle between Spartak Moscow and CSKA Moscow is the most fierce and historic Moscow derby.",
+          "explanation": "Битва между «Спартаком» и ЦСКА — самое принципиальное и статусное дерби в истории чемпионатов страны.",
           "points": 100
         },
         {
           "id": 102,
-          "question": "Which club from Saint Petersburg has dominated modern championships with consecutive titles?",
+          "question": "Какой клуб из Санкт-Петербурга стал главным гегемоном современного российского футбола, выиграв серию чемпионских титулов подряд?",
           "options": [
-            "Rubin Kazan",
-            "Zenit Saint Petersburg",
-            "Lokomotiv Moscow",
-            "Torpedo Moscow"
+            "Рубин Казань",
+            "Зенит Санкт-Петербург",
+            "Локомотив Москва",
+            "Торпедо Москва"
           ],
           "correct_index": 1,
-          "explanation": "Zenit Saint Petersburg established a dominant championship streak in the modern era.",
+          "explanation": "«Зенит» из Санкт-Петербурга установил рекордную серию чемпионств в современную эпоху РПЛ.",
           "points": 100
         },
         {
           "id": 103,
-          "question": "What is the nickname traditionally given to CSKA Moscow due to its historic military sporting club roots?",
+          "question": "Какое историческое прозвище закрепилось за ЦСКА благодаря спортивному обществу Вооружённых сил?",
           "options": [
-            "The Gladiators",
-            "The Railwaymen",
-            "The Armymen",
-            "The Bulls"
+            "Гладиаторы",
+            "Железнодорожники",
+            "Армейцы",
+            "Быки"
           ],
           "correct_index": 2,
-          "explanation": "CSKA was founded as a military sports society, earning them the nickname 'The Armymen'.",
+          "explanation": "ЦСКА исторически был армейским спортивным клубом, за что команду и болельщиков называют «Армейцами».",
           "points": 100
         },
         {
           "id": 104,
-          "question": "Which southern club, founded in 2008, quickly rose to the top flight with a renowned youth academy?",
+          "question": "Какой южный клуб, основанный в 2008 году, прославился своей современной академией и великолепным парком со стадионом?",
           "options": [
-            "FC Krasnodar",
-            "FC Sochi",
-            "Fakel Voronezh",
-            "Akhmat Grozny"
+            "ФК Краснодар",
+            "ФК Сочи",
+            "Факел Воронеж",
+            "Ахмат Грозный"
           ],
           "correct_index": 0,
-          "explanation": "FC Krasnodar was founded in 2008 and is acclaimed for its state-of-the-art academy and stadium.",
+          "explanation": "«Краснодар» был основан в 2008 году Сергеем Галицким и стал образцом развития клубной академии и инфраструктуры.",
           "points": 120
         },
         {
           "id": 105,
-          "question": "Which club is known as 'The Railwaymen' due to its founding historical affiliation with the Ministry of Railways?",
+          "question": "Какой московский клуб исторически представляет ведомство путей сообщения и железнодорожников?",
           "options": [
-            "Krylia Sovetov",
-            "Lokomotiv Moscow",
-            "Ural Yekaterinburg",
-            "Orenburg"
+            "Крылья Советов",
+            "Локомотив Москва",
+            "Урал Екатеринбург",
+            "Оренбург"
           ],
           "correct_index": 1,
-          "explanation": "Lokomotiv Moscow originated in 1922 under the railroad workers' union.",
+          "explanation": "«Локомотив» был создан при поддержке профсоюза работников железнодорожного транспорта.",
           "points": 100
         },
         {
           "id": 106,
-          "question": "Which club broke the capital's monopoly by winning back-to-back league championships in 2008 and 2009?",
+          "question": "Какой клуб из Казани сенсационно оформил два чемпионства подряд в 2008 и 2009 годах под руководством Курбана Бердыева?",
           "options": [
-            "Alania Vladikavkaz",
-            "Rotor Volgograd",
-            "Rubin Kazan",
-            "Anzhi Makhachkala"
+            "Алания Владикавказ",
+            "Ротор Волгоград",
+            "Рубин Казань",
+            "Анжи Махачкала"
           ],
           "correct_index": 2,
-          "explanation": "Under manager Kurban Berdyev, Rubin Kazan won consecutive league titles in 2008 and 2009.",
+          "explanation": "«Рубин» Курбана Бердыева два года подряд брал золото чемпионата России, а также побеждал «Барселону» на Камп Ноу.",
           "points": 150
         }
       ]
     },
     {
       "id": "players_records",
-      "title": "Legends & Record Breakers",
-      "description": "Top goalscorers, legendary goalkeepers, clean sheets, and star transfers",
+      "title": "Легенды и Рекорды",
+      "description": "Лучшие бомбардиры, сухие матчи вратарей, звёздные легионеры и рекорды",
       "icon": "military_tech",
       "accent_color": "#FF8533",
       "questions": [
         {
           "id": 201,
-          "question": "Which legendary goalkeeper has made over 500 appearances for CSKA and holds the league clean sheets record?",
+          "question": "Какому вратарю ЦСКА принадлежит абсолютный рекорд по количеству «сухих» матчей в истории чемпионатов России?",
           "options": [
-            "Vyacheslav Malafeev",
-            "Igor Akinfeev",
-            "Sergei Ryzhikov",
-            "Soslan Dzhanaev"
+            "Вячеслав Малафеев",
+            "Игорь Акинфеев",
+            "Сергей Рыжиков",
+            "Сослан Джанаев"
           ],
           "correct_index": 1,
-          "explanation": "Igor Akinfeev is the undisputed record holder for most clean sheets in Russian league history.",
+          "explanation": "Игорь Акинфеев провёл более 250 матчей на ноль в чемпионатах страны, возглавляя клуб Льва Яшина.",
           "points": 100
         },
         {
           "id": 202,
-          "question": "Who holds the record for the all-time highest goal tally in Russian football top flight history?",
+          "question": "Кто из нападающих стал рекордсменом чемпионатов России по общему числу забитых мячей?",
           "options": [
-            "Artem Dzyuba",
-            "Aleksandr Kerzhakov",
-            "Oleg Veretennikov",
-            "Roman Pavlyuchenko"
+            "Артём Дзюба",
+            "Александр Кержаков",
+            "Олег Веретенников",
+            "Роман Павлюченко"
           ],
           "correct_index": 0,
-          "explanation": "Artem Dzyuba holds the all-time goalscoring milestone in Russian Premier League history.",
+          "explanation": "Артём Дзюба побил рекорд по общему числу голов в истории РПЛ.",
           "points": 120
         },
         {
           "id": 203,
-          "question": "Which prolific Brazilian striker formed an iconic attacking partnership at CSKA Moscow winning the 2005 UEFA Cup?",
+          "question": "Какой бразильский форвард с яркими косичками стал любимцем болельщиков ЦСКА и выиграл Кубок УЕФА 2005 года?",
           "options": [
-            "Hulk",
-            "Vagner Love",
-            "Ari",
-            "Welliton"
+            "Халк",
+            "Вагнер Лав",
+            "Ари",
+            "Веллитон"
           ],
           "correct_index": 1,
-          "explanation": "Vágner Love scored pivotal goals for CSKA during their golden European and domestic campaigns.",
+          "explanation": "Вагнер Лав вписал своё имя золотыми буквами в историю армейского клуба.",
           "points": 120
         },
         {
           "id": 204,
-          "question": "Which powerhouse Brazilian winger terrorized defences with thunderous long-range strikes for Zenit?",
+          "question": "Какой мощный бразильский вингер с пушечным ударом с левой ноги блистал в составе «Зенита»?",
           "options": [
-            "Malcom",
-            "Hulk",
-            "Claudinho",
-            "Douglas Santos"
+            "Малком",
+            "Халк",
+            "Клаудиньо",
+            "Дуглас Сантос"
           ],
           "correct_index": 1,
-          "explanation": "Hulk was famous for his unstoppable left-footed strikes and explosive physical play.",
+          "explanation": "Халк терроризировал голкиперов невероятными по силе ударами из-за пределов штрафной площади.",
           "points": 100
         },
         {
           "id": 205,
-          "question": "Which Dutch international winger became a fan idol and title winner leading Spartak Moscow's frontline?",
+          "question": "Какой голландский легионер стал ключевым бомбардиром и любимцем трибун чемпионского «Спартака» 2017 года?",
           "options": [
-            "Guus Til",
-            "Quincy Promes",
-            "Royston Drenthe",
-            "Alex Kral"
+            "Гус Тиль",
+            "Квинси Промес",
+            "Ройстон Дренте",
+            "Алекс Крал"
           ],
           "correct_index": 1,
-          "explanation": "Quincy Promes scored crucial goals to guide Spartak Moscow to the 2016-17 championship.",
+          "explanation": "Квинси Промес внёс решающий вклад в завоевание чемпионского титула «Спартаком» в сезоне 2016/17.",
           "points": 120
         }
       ]
     },
     {
       "id": "stadiums_cities",
-      "title": "Stadiums & Match Arenas",
-      "description": "Cutting-edge arenas, host cities, architectures, and matchday atmospheres",
+      "title": "Стадионы и Арены",
+      "description": "Современные арены, города проведения, архитектура и футбольная атмосфера",
       "icon": "stadium",
       "accent_color": "#FFA726",
       "questions": [
         {
           "id": 301,
-          "question": "Which ultramodern stadium in Saint Petersburg features a retractable roof and sliding pitch?",
+          "question": "Какой ультрасовременный стадион на Крестовском острове в Санкт-Петербурге оснащен раздвижной крышей и выкатным полем?",
           "options": [
-            "Gazprom Arena",
-            "Lukoil Arena",
-            "RZD Arena",
-            "Fisht Olympic Stadium"
+            "Газпром Арена",
+            "Лукойл Арена",
+            "РЖД Арена",
+            "Фишт"
           ],
           "correct_index": 0,
-          "explanation": "Gazprom Arena on Krestovsky Island features a retractable roof allowing all-weather football.",
+          "explanation": "«Газпром Арена» позволяет играть в футбол в комфортных условиях при любой погоде круглый год.",
           "points": 100
         },
         {
           "id": 302,
-          "question": "Which stadium is famous for its panoramic 360-degree LED screen encircling the entire interior bowl?",
+          "question": "На каком стадионе установлен знаменитый 360-градусный панорамный медиаэкран по всему внутреннему периметру трибун?",
           "options": [
-            "Krasnodar Stadium",
-            "VEB Arena",
-            "VTB Arena",
-            "Samara Arena"
+            "Стадион ФК Краснодар",
+            "ВЭБ Арена",
+            "ВТБ Арена",
+            "Самара Арена"
           ],
           "correct_index": 0,
-          "explanation": "Krasnodar Stadium boasts a world-famous 360-degree curved LED video ribbon along the upper tier.",
+          "explanation": "Стадион в парке Галицкого в Краснодаре оборудован уникальным круговым медиаэкраном площадью около 5000 кв. метров.",
           "points": 120
         },
         {
           "id": 303,
-          "question": "What is the home arena of Spartak Moscow located in the Tushino district of Moscow?",
+          "question": "Как называется домашняя арена московского «Спартака», открытая в Тушино в 2014 году?",
           "options": [
-            "VTB Arena",
-            "Lukoil Arena (formerly Otkritie)",
-            "VEB Arena",
-            "RZD Arena"
+            "ВТБ Арена",
+            "Лукойл Арена",
+            "ВЭБ Арена",
+            "РЖД Арена"
           ],
           "correct_index": 1,
-          "explanation": "Lukoil Arena (opened as Otkritie Arena in 2014) is Spartak Moscow's modern home fortress.",
+          "explanation": "Домашний стадион красно-белых в Тушино носит название «Лукойл Арена» (ранее «Открытие Банк Арена»).",
           "points": 100
         },
         {
           "id": 304,
-          "question": "Which historic Moscow venue is unique for housing both a football stadium and an indoor hockey arena under one roof?",
+          "question": "Какой спортивный комплекс в Москве уникален тем, что объединяет под одной крышей футбольный стадион и хоккейную арену?",
           "options": [
-            "VTB Arena (Dynamo Central Stadium)",
-            "Luzhniki Stadium",
-            "Torpedo Stadium",
-            "Lokomotiv Arena"
+            "ВТБ Арена (Центральный стадион Динамо)",
+            "Лужники",
+            "Стадион имени Стрельцова",
+            "Арена Локомотив"
           ],
           "correct_index": 0,
-          "explanation": "VTB Arena is an innovative dual-venue complex housing both football and basketball/ice hockey.",
+          "explanation": "«ВТБ Арена» им. Льва Яшина объединяет футбольную арену «Динамо» и универсальную арену для хоккея и концертов.",
           "points": 150
         }
       ]
     },
     {
       "id": "tactics_rules",
-      "title": "Tactics, VAR & League Rules",
-      "description": "Match regulations, substitutions, VAR protocols, and championship tie-breakers",
+      "title": "Правила, Тактика и VAR",
+      "description": "Регламент соревнований, правила замен, судейство, VAR и критерии распределения мест",
       "icon": "psychology",
       "accent_color": "#FF7043",
       "questions": [
         {
           "id": 401,
-          "question": "How many teams compete in the standard Russian Premier League championship table each season?",
+          "question": "Сколько команд выступает в турнире Российской Премьер-Лиги в каждом сезоне?",
           "options": [
-            "14 teams",
-            "16 teams",
-            "18 teams",
-            "20 teams"
+            "14 команд",
+            "16 команд",
+            "18 команд",
+            "20 команд"
           ],
           "correct_index": 1,
-          "explanation": "The Russian Premier League format features 16 teams playing home and away (30 matchdays).",
+          "explanation": "В турнире РПЛ принимают участие 16 клубов, которые играют в два круга (всего 30 туров).",
           "points": 100
         },
         {
           "id": 402,
-          "question": "Under standard league regulations, how many player substitutions are allowed per team across 3 stoppage windows?",
+          "question": "Сколько замен разрешено делать каждой команде за матч в рамках трёх пауз в игре?",
           "options": [
-            "3 substitutions",
-            "4 substitutions",
-            "5 substitutions",
-            "6 substitutions"
+            "3 замены",
+            "4 замены",
+            "5 замен",
+            "6 замен"
           ],
           "correct_index": 2,
-          "explanation": "Teams are permitted up to 5 substitutions in 3 stoppage intervals (excluding half-time).",
+          "explanation": "Командам разрешено производить до 5 замен в 3 игровых слота (замены в перерыве слотом не считаются).",
           "points": 100
         },
         {
           "id": 403,
-          "question": "In the event of a tie in points at the end of the season, what is the first tie-breaker used in the league table?",
+          "question": "При равенстве очков у двух команд в таблице РПЛ, какой показатель учитывается первым?",
           "options": [
-            "Overall Goal Difference",
-            "Head-to-head records (points, wins, goal diff)",
-            "Number of goals scored away",
-            "Fair play red card count"
+            "Общая разница забитых и пропущенных мячей",
+            "Результаты очных встреч (очки, победы, разница)",
+            "Количество голов, забитых в гостях",
+            "Количество красных карточек"
           ],
           "correct_index": 1,
-          "explanation": "Head-to-head results between the tied teams serve as the primary tie-breaking criterion.",
+          "explanation": "Первым ключевым критерием при равенстве очков в РПЛ являются результаты личных встреч между соперниками.",
           "points": 150
         },
         {
           "id": 404,
-          "question": "What is the minimum distance required for defensive wall players from a direct free-kick?",
+          "question": "Какое минимальное расстояние до мяча должны соблюдать игроки в стенке при пробитии штрафного удара?",
           "options": [
-            "7.15 meters",
-            "9.15 meters (10 yards)",
-            "11.00 meters",
-            "12.50 meters"
+            "7.15 метров",
+            "9.15 метров (10 ярдов)",
+            "11.00 метров",
+            "12.50 метров"
           ],
           "correct_index": 1,
-          "explanation": "Defenders must maintain a distance of at least 9.15 meters (10 yards) from the ball.",
+          "explanation": "Футболисты защищающейся команды обязаны отойти от мяча минимум на 9.15 метра.",
           "points": 100
         }
       ]
     },
     {
       "id": "word_puzzle",
-      "title": "Football Word Puzzle",
-      "description": "Guess essential football terms, tactical roles, and club traditions",
+      "title": "Футбольные Слова",
+      "description": "Отгадывай футбольные термины, амплуа и клубные традиции",
       "icon": "spellcheck",
       "accent_color": "#FF6B00",
       "words": [
         {
-          "word": "DERBY",
-          "hint": "A high-intensity match between two rival clubs from the same city or region",
-          "difficulty": "Easy",
+          "word": "ДЕРБИ",
+          "hint": "Принципиальный матч между двумя клубами из одного города или региона",
+          "difficulty": "Легко",
           "points": 100
         },
         {
-          "word": "HATTRICK",
-          "hint": "Scoring three goals in a single match by an individual player",
-          "difficulty": "Easy",
+          "word": "ХЕТТРИК",
+          "hint": "Три забитых мяча одним футболистом в одном матче",
+          "difficulty": "Легко",
           "points": 100
         },
         {
-          "word": "ARMYMEN",
-          "hint": "Traditional nickname associated with CSKA Moscow due to military heritage",
-          "difficulty": "Medium",
+          "word": "АРМЕЙЦЫ",
+          "hint": "Историческое клубное прозвище футболистов и фанатов московского ЦСКА",
+          "difficulty": "Средне",
           "points": 150
         },
         {
-          "word": "CLEANSHEET",
-          "hint": "When a goalkeeper and defense prevent the opposing team from scoring any goals",
-          "difficulty": "Medium",
+          "word": "СУХАРЬ",
+          "hint": "Матч вратаря на ноль без пропущенных голов в свои ворота",
+          "difficulty": "Средне",
           "points": 150
         },
         {
-          "word": "PLAYMAKER",
-          "hint": "A creative attacking midfielder who orchestrates team offense and assists",
-          "difficulty": "Medium",
+          "word": "ПЛЕЙМЕЙКЕР",
+          "hint": "Полузащитник-диспетчер, конструирующий атаки и раздающий голевые передачи",
+          "difficulty": "Средне",
           "points": 150
         },
         {
-          "word": "GLADIATORS",
-          "hint": "Symbolic moniker and statue representing Spartak Moscow outside their stadium",
-          "difficulty": "Hard",
+          "word": "ГЛАДИАТОР",
+          "hint": "Символ и статуя у стадиона московского «Спартака»",
+          "difficulty": "Сложно",
           "points": 200
         },
         {
-          "word": "CHAMPIONSHIP",
-          "hint": "The ultimate seasonal trophy awarded to the first-place team in the league table",
-          "difficulty": "Medium",
+          "word": "ЧЕМПИОН",
+          "hint": "Победитель сезона, занявший первое место в турнирной таблице",
+          "difficulty": "Средне",
           "points": 150
         },
         {
-          "word": "PENALTY",
-          "hint": "A direct kick from 11 meters awarded for a foul inside the penalty area",
-          "difficulty": "Easy",
+          "word": "ПЕНАЛЬТИ",
+          "hint": "Одиннадцатиметровый штрафной удар за нарушение правил в штрафной площади",
+          "difficulty": "Легко",
           "points": 100
         }
       ]
@@ -351,115 +351,115 @@
   "live_matches": [
     {
       "id": "match_101",
-      "home_team": "Zenit St. Petersburg",
-      "away_team": "Spartak Moscow",
+      "home_team": "Зенит Санкт-Петербург",
+      "away_team": "Спартак Москва",
       "home_score": 2,
       "away_score": 1,
       "minute": "68'",
       "status": "LIVE",
-      "stadium": "Gazprom Arena, St. Petersburg",
-      "attendance": "51,200",
-      "possession": "58% - 42%",
-      "shots_on_target": "7 - 4",
-      "corners": "5 - 3",
+      "stadium": "Газпром Арена, Санкт-Петербург",
+      "attendance": "51 200",
+      "possession": "58% — 42%",
+      "shots_on_target": "7 — 4",
+      "corners": "5 — 3",
       "highlights": [
-        "18' GOAL: Thunderous volley into the top corner (1-0)",
-        "41' GOAL: Equalizer from a pinpoint counter-attack (1-1)",
-        "54' GOAL: Powerful header off a curling corner (2-1)",
-        "62' YELLOW CARD: Tactical foul near the halfway line"
+        "18' ГОЛ: Мощный удар под перекладину с линии штрафной (1:0)",
+        "41' ГОЛ: Стремительная контратака с точным завершением (1:1)",
+        "54' ГОЛ: Плотный удар головой после подачи с углового (2:1)",
+        "62' ПРЕДУПРЕЖДЕНИЕ: Тактический срыв контратаки в центре поля"
       ],
-      "match_trivia": "These two giants have met over 160 times in national league history."
+      "match_trivia": "Клубы провели между собой более 160 официальных матчей в чемпионатах страны."
     },
     {
       "id": "match_102",
-      "home_team": "CSKA Moscow",
-      "away_team": "Lokomotiv Moscow",
+      "home_team": "ЦСКА Москва",
+      "away_team": "Локомотив Москва",
       "home_score": 0,
       "away_score": 0,
       "minute": "34'",
       "status": "LIVE",
-      "stadium": "VEB Arena, Moscow",
-      "attendance": "24,800",
-      "possession": "49% - 51%",
-      "shots_on_target": "3 - 2",
-      "corners": "2 - 4",
+      "stadium": "ВЭБ Арена, Москва",
+      "attendance": "24 800",
+      "possession": "49% — 51%",
+      "shots_on_target": "3 — 2",
+      "corners": "2 — 4",
       "highlights": [
-        "12' SAVE: Fantastic diving stop keeping the score level",
-        "29' FOUL: Free-kick awarded just outside the penalty box"
+        "12' СЕЙВ: Великолепный прыжок вратаря, парировавший мяч на угловой",
+        "29' ШТРАФНОЙ: Опасный стандарт прямо перед линией штрафной"
       ],
-      "match_trivia": "Both teams are multi-time league champions and domestic cup winners."
+      "match_trivia": "Оба столичных коллектива многократно становились чемпионами и обладателями Кубка."
     },
     {
       "id": "match_103",
-      "home_team": "FC Krasnodar",
-      "away_team": "Dynamo Moscow",
+      "home_team": "ФК Краснодар",
+      "away_team": "Динамо Москва",
       "home_score": 3,
       "away_score": 2,
       "minute": "FT",
       "status": "FINISHED",
-      "stadium": "Krasnodar Stadium, Krasnodar",
-      "attendance": "33,100",
-      "possession": "52% - 48%",
-      "shots_on_target": "8 - 6",
-      "corners": "6 - 5",
+      "stadium": "Стадион ФК Краснодар, Краснодар",
+      "attendance": "33 100",
+      "possession": "52% — 48%",
+      "shots_on_target": "8 — 6",
+      "corners": "6 — 5",
       "highlights": [
-        "14' GOAL: Early strike inside the near post (1-0)",
-        "28' GOAL: Clinical penalty conversion (1-1)",
-        "61' GOAL: Curled finish from the edge of the box (2-1)",
-        "78' GOAL: Equalizer following a goalmouth scramble (2-2)",
-        "89' GOAL: Late winner sending the home crowd wild! (3-2)"
+        "14' ГОЛ: Быстрый гол низом в ближний угол (1:0)",
+        "28' ГОЛ: Хладнокровно реализованный пенальти (1:1)",
+        "61' ГОЛ: Обводящий удар в девятку с фланга (2:1)",
+        "78' ГОЛ: Забитый мяч после суматохи у ворот (2:2)",
+        "89' ГОЛ: Победный мяч на последних минутах под рёв трибун! (3:2)"
       ],
-      "match_trivia": "A thrilling 5-goal spectacle featuring end-to-end attacking football."
+      "match_trivia": "Яркий пятиголевой триллер с атакующим стилем обеих команд."
     },
     {
       "id": "match_104",
-      "home_team": "FC Rostov",
-      "away_team": "Rubin Kazan",
+      "home_team": "ФК Ростов",
+      "away_team": "Рубин Казань",
       "home_score": 0,
       "away_score": 0,
       "minute": "20:00",
       "status": "UPCOMING",
-      "stadium": "Rostov Arena, Rostov-on-Don",
-      "attendance": "Expected ~26,000",
-      "possession": "--",
-      "shots_on_target": "--",
-      "corners": "--",
+      "stadium": "Ростов Арена, Ростов-на-Дону",
+      "attendance": "Ожидается ~26 000",
+      "possession": "—",
+      "shots_on_target": "—",
+      "corners": "—",
       "highlights": [
-        "Kickoff scheduled for tonight at 20:00 local time",
-        "Both teams fighting for upper table qualification"
+        "Стартовый свисток прозвучит сегодня в 20:00",
+        "Команды ведут борьбу за попадание в верхнюю часть таблицы"
       ],
-      "match_trivia": "Rostov reached the Champions League group stage under Kurban Berdyev."
+      "match_trivia": "«Ростов» играл на групповом этапе Лиги Чемпионов под руководством Бердыева."
     }
   ],
   "daily_challenges": [
     {
       "id": "daily_1",
-      "title": "Matchday Trivia Master",
-      "description": "Answer 5 trivia questions correctly in any category",
+      "title": "Знаток Матчдэя",
+      "description": "Ответьте правильно на 5 вопросов в любой категории викторины",
       "reward_points": 250,
       "progress_target": 5,
       "icon": "military_tech"
     },
     {
       "id": "daily_2",
-      "title": "Derby Tactician",
-      "description": "Complete a full quiz session in the Clubs & Derbies section",
+      "title": "Тактик Дерби",
+      "description": "Пройдите полностью раздел «Клубы и Дерби РПЛ»",
       "reward_points": 350,
       "progress_target": 1,
       "icon": "sports_soccer"
     },
     {
       "id": "daily_3",
-      "title": "Clean Sheet Precision",
-      "description": "Score at least 80% accuracy in any quiz challenge",
+      "title": "Сухой матч",
+      "description": "Наберите более 80% правильных ответов в одном квизе",
       "reward_points": 400,
       "progress_target": 1,
       "icon": "verified_user"
     },
     {
       "id": "daily_4",
-      "title": "Vocabulary Striker",
-      "description": "Unscramble and solve 2 football word puzzles",
+      "title": "Снайпер Слов",
+      "description": "Отгадайте 2 футбольных термина в игре «Футбольные слова»",
       "reward_points": 300,
       "progress_target": 2,
       "icon": "spellcheck"
@@ -468,65 +468,65 @@
   "loyalty_store": [
     {
       "id": "reward_vip_pass",
-      "title": "VIP Match Pass Badge",
+      "title": "Бейдж VIP Матч-Пасс",
       "cost": 500,
       "icon": "confirmation_number",
-      "description": "Digital VIP pass badge granting match center priority status."
+      "description": "Цифровой VIP-бейдж с приоритетным статусом в матч-центре."
     },
     {
       "id": "reward_golden_ball",
-      "title": "Golden Ball Emblem",
+      "title": "Золотой Мяч Болельщика",
       "cost": 1000,
       "icon": "sports_soccer",
-      "description": "Prestigious golden soccer ball badge on your fan profile."
+      "description": "Престижная эмблема золотого мяча в профиле фаната."
     },
     {
       "id": "reward_derby_pin",
-      "title": "Signed Derby Crest",
+      "title": "Памятный Герб Дерби",
       "cost": 1800,
       "icon": "shield",
-      "description": "Exclusive collector crest commemorating historic league rivalries."
+      "description": "Коллекционный знак в честь принципиальных соперничеств лиги."
     },
     {
       "id": "reward_stadium_theme",
-      "title": "Floodlight Glow Style",
+      "title": "Свет Прожекторов Арены",
       "cost": 2500,
       "icon": "wb_incandescent",
-      "description": "Special stadium neon orange floodlight highlight across cards."
+      "description": "Особый неоновый оранжевый акцент подсветки карточек матчей."
     },
     {
       "id": "reward_legend_frame",
-      "title": "Premier Legend Frame",
+      "title": "Рамка Легенды РПЛ",
       "cost": 4000,
       "icon": "military_tech",
-      "description": "Elite animated avatar frame reserved for top league scholars."
+      "description": "Элитная золотая рамка профиля для знатоков чемпионата."
     }
   ],
   "fan_ranks": [
     {
-      "title": "Rookie Supporter",
+      "title": "Новичок Трибун",
       "min_points": 0,
-      "perk": "Access to all standard match center fixtures and quizzes"
+      "perk": "Доступ ко всем матчам центра и стандартным викторинам"
     },
     {
-      "title": "Season Ticket Holder",
+      "title": "Владелец Абонемента",
       "min_points": 500,
-      "perk": "+10% bonus loyalty points on daily matchday challenges"
+      "perk": "+10% бонусных очков в ежедневных челленджах"
     },
     {
-      "title": "Derby Veteran",
+      "title": "Ветеран Дерби",
       "min_points": 1500,
-      "perk": "+20% bonus points and unlocked rare store badge discounts"
+      "perk": "+20% бонусов и эксклюзивные скидки в магазине наград"
     },
     {
-      "title": "Premier League Master",
+      "title": "Мастер Премьер-Лиги",
       "min_points": 3500,
-      "perk": "VIP icon frame and featured position on weekly leaderboard"
+      "perk": "VIP-рамка профиля и место в топе таблицы знатоков"
     },
     {
-      "title": "Grand Legend",
+      "title": "Гранд Легенда",
       "min_points": 7000,
-      "perk": "All store perks unlocked with golden verified fan status"
+      "perk": "Все награды разблокированы и статус Золотого фаната"
     }
   ]
 }

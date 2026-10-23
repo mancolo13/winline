@@ -20,7 +20,7 @@ class DailyChallengesTab extends StatelessWidget {
           backgroundColor: AppTheme.background,
           appBar: AppBar(
             title: Text(
-              'DAILY CHALLENGES',
+              'ЕЖЕДНЕВНЫЕ ЗАДАНИЯ',
               style: GoogleFonts.outfit(
                 fontSize: 20,
                 fontWeight: FontWeight.w800,
@@ -96,7 +96,7 @@ class DailyChallengesTab extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    '${quizService.streakDays}-DAY MATCH STREAK',
+                                    'СЕРИЯ: ${quizService.streakDays} ДНЕЙ ПОДРЯД',
                                     style: GoogleFonts.outfit(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w900,
@@ -106,7 +106,7 @@ class DailyChallengesTab extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 2),
                                   Text(
-                                    'Daily loyalty multiplier active: 1.25x',
+                                    'Множитель наград активен: 1.25x',
                                     style: GoogleFonts.inter(
                                       fontSize: 12,
                                       color: AppTheme.accentGold,
@@ -122,7 +122,7 @@ class DailyChallengesTab extends StatelessWidget {
 
                         // Streak Days Row
                         Row(
-                          children: ['M', 'T', 'W', 'T', 'F', 'S', 'S'].asMap().entries.map((entry) {
+                          children: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'].asMap().entries.map((entry) {
                             final idx = entry.key;
                             final day = entry.value;
                             final isCompleted = idx < quizService.streakDays;
@@ -148,7 +148,7 @@ class DailyChallengesTab extends StatelessWidget {
                                     Text(
                                       day,
                                       style: GoogleFonts.inter(
-                                        fontSize: 12,
+                                        fontSize: 11,
                                         fontWeight: FontWeight.bold,
                                         color: isCompleted ? Colors.white : AppTheme.textSecondary,
                                       ),
@@ -178,7 +178,7 @@ class DailyChallengesTab extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          'TODAY’S MISSIONS',
+                          'ЗАДАНИЯ НА СЕГОДНЯ',
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w800,
@@ -191,7 +191,7 @@ class DailyChallengesTab extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Text(
-                        '${claimed.length} of ${challenges.length} Claimed',
+                        '${claimed.length} из ${challenges.length} получено',
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
@@ -291,7 +291,7 @@ class DailyChallengesTab extends StatelessWidget {
                                     const SizedBox(width: 6),
                                     Flexible(
                                       child: Text(
-                                        '+${challenge.rewardPoints} Points',
+                                        '+${challenge.rewardPoints} баллов',
                                         style: GoogleFonts.inter(
                                           fontSize: 13,
                                           fontWeight: FontWeight.bold,
@@ -312,7 +312,7 @@ class DailyChallengesTab extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
-                                    'Claimed',
+                                    'Получено',
                                     style: GoogleFonts.inter(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w600,
@@ -328,7 +328,7 @@ class DailyChallengesTab extends StatelessWidget {
                                       ScaffoldMessenger.of(context).showSnackBar(
                                         SnackBar(
                                           content: Text(
-                                            'Claimed +${challenge.rewardPoints} Loyalty Points!',
+                                            'Начислено +${challenge.rewardPoints} баллов лояльности!',
                                             style: const TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                           backgroundColor: AppTheme.accentEmerald,
@@ -347,7 +347,7 @@ class DailyChallengesTab extends StatelessWidget {
                                     ),
                                   ),
                                   child: Text(
-                                    'Claim Points',
+                                    'Забрать',
                                     style: GoogleFonts.outfit(
                                       fontSize: 13,
                                       fontWeight: FontWeight.bold,

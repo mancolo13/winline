@@ -45,7 +45,7 @@ class LoyaltyProfileTab extends StatelessWidget {
           backgroundColor: AppTheme.background,
           appBar: AppBar(
             title: Text(
-              'LOYALTY & PROFILE',
+              'ЛОЯЛЬНОСТЬ И ПРОФИЛЬ',
               style: GoogleFonts.outfit(
                 fontSize: 20,
                 fontWeight: FontWeight.w800,
@@ -61,7 +61,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                 children: [
                   // Fan Rank Card
                   Container(
-                    padding: const EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
                         colors: [Color(0xFF2E1700), Color(0xFF141924)],
@@ -78,27 +78,27 @@ class LoyaltyProfileTab extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              width: 56,
-                              height: 56,
+                              width: 52,
+                              height: 52,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: AppTheme.primary.withAlpha(35),
                                 border: Border.all(color: AppTheme.primary, width: 2),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(28),
+                                borderRadius: BorderRadius.circular(26),
                                 child: Image.asset(
                                   'assets/logo.png',
                                   fit: BoxFit.cover,
                                   errorBuilder: (context, error, stackTrace) => const Icon(
                                     Icons.workspace_premium_rounded,
                                     color: AppTheme.accentGold,
-                                    size: 32,
+                                    size: 30,
                                   ),
                                 ),
                               ),
                             ),
-                            const SizedBox(width: 14),
+                            const SizedBox(width: 12),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -106,30 +106,32 @@ class LoyaltyProfileTab extends StatelessWidget {
                                   Text(
                                     currentRank.title.toUpperCase(),
                                     style: GoogleFonts.outfit(
-                                      fontSize: 18,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.w900,
                                       color: Colors.white,
                                       letterSpacing: 0.5,
                                     ),
                                   ),
-                                  const SizedBox(height: 4),
+                                  const SizedBox(height: 3),
                                   Text(
                                     currentRank.perk,
                                     style: GoogleFonts.inter(
-                                      fontSize: 12,
+                                      fontSize: 11.5,
                                       color: AppTheme.textSecondary,
                                     ),
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ],
                               ),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 14),
 
                         // Balance Pill
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                           decoration: BoxDecoration(
                             color: AppTheme.surfaceElevated,
                             borderRadius: BorderRadius.circular(12),
@@ -140,9 +142,9 @@ class LoyaltyProfileTab extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Text(
-                                  'Loyalty Balance',
+                                  'Баланс очков',
                                   style: GoogleFonts.inter(
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: AppTheme.textSecondary,
                                   ),
                                   maxLines: 1,
@@ -153,15 +155,18 @@ class LoyaltyProfileTab extends StatelessWidget {
                               Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  const Icon(Icons.stars_rounded, color: AppTheme.accentGold, size: 22),
-                                  const SizedBox(width: 6),
-                                  Text(
-                                    '${quizService.loyaltyPoints} PTS',
-                                    style: GoogleFonts.outfit(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w900,
-                                      color: AppTheme.accentGold,
-                                      letterSpacing: 0.5,
+                                  const Icon(Icons.stars_rounded, color: AppTheme.accentGold, size: 20),
+                                  const SizedBox(width: 5),
+                                  FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child: Text(
+                                      '${quizService.loyaltyPoints} БАЛЛОВ',
+                                      style: GoogleFonts.outfit(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w900,
+                                        color: AppTheme.accentGold,
+                                        letterSpacing: 0.5,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -169,7 +174,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 14),
 
                         // Rank Progress
                         if (nextRank != null) ...[
@@ -178,9 +183,9 @@ class LoyaltyProfileTab extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Text(
-                                  'Next Tier: ${nextRank.title}',
+                                  'Следующий ранг: ${nextRank.title}',
                                   style: GoogleFonts.inter(
-                                    fontSize: 12,
+                                    fontSize: 11.5,
                                     fontWeight: FontWeight.w600,
                                     color: AppTheme.textSecondary,
                                   ),
@@ -189,12 +194,17 @@ class LoyaltyProfileTab extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(width: 8),
-                              Text(
-                                '${quizService.loyaltyPoints} / ${nextRank.minPoints} pts',
-                                style: GoogleFonts.inter(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppTheme.primary,
+                              Flexible(
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: Text(
+                                    '${quizService.loyaltyPoints} / ${nextRank.minPoints} баллов',
+                                    style: GoogleFonts.inter(
+                                      fontSize: 11.5,
+                                      fontWeight: FontWeight.bold,
+                                      color: AppTheme.primary,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ],
@@ -211,7 +221,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                           ),
                         ] else ...[
                           Text(
-                            'Maximum Fan Rank Reached!',
+                            'Достигнут максимальный ранг болельщика!',
                             style: GoogleFonts.inter(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
@@ -226,7 +236,7 @@ class LoyaltyProfileTab extends StatelessWidget {
 
                   // Career Statistics
                   Text(
-                    'FAN CAREER STATISTICS',
+                    'КАРЬЕРА БОЛЕЛЬЩИКА',
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w800,
@@ -237,13 +247,13 @@ class LoyaltyProfileTab extends StatelessWidget {
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      _buildStatCard('Quizzes', '${quizService.quizzesPlayed}', Icons.quiz_rounded),
-                      const SizedBox(width: 10),
-                      _buildStatCard('Correct', '${quizService.questionsCorrect}', Icons.check_circle_rounded),
-                      const SizedBox(width: 10),
-                      _buildStatCard('Accuracy', '$accuracy%', Icons.track_changes_rounded),
-                      const SizedBox(width: 10),
-                      _buildStatCard('Words', '${quizService.wordsSolved}', Icons.spellcheck_rounded),
+                      _buildStatCard('Квизы', '${quizService.quizzesPlayed}', Icons.quiz_rounded),
+                      const SizedBox(width: 6),
+                      _buildStatCard('Верно', '${quizService.questionsCorrect}', Icons.check_circle_rounded),
+                      const SizedBox(width: 6),
+                      _buildStatCard('Точность', '$accuracy%', Icons.track_changes_rounded),
+                      const SizedBox(width: 6),
+                      _buildStatCard('Слова', '${quizService.wordsSolved}', Icons.spellcheck_rounded),
                     ],
                   ),
                   const SizedBox(height: 24),
@@ -254,7 +264,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          'LOYALTY FAN SHOP',
+                          'МАГАЗИН НАГРАД',
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w800,
@@ -267,7 +277,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Text(
-                        '${unlocked.length} of ${storeItems.length} Owned',
+                        '${unlocked.length} из ${storeItems.length} открыто',
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
@@ -346,7 +356,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                                     const SizedBox(width: 4),
                                     Flexible(
                                       child: Text(
-                                        '${item.cost} Points',
+                                        '${item.cost} баллов',
                                         style: GoogleFonts.inter(
                                           fontSize: 12,
                                           fontWeight: FontWeight.bold,
@@ -370,7 +380,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                                 border: Border.all(color: AppTheme.accentEmerald),
                               ),
                               child: Text(
-                                'Unlocked',
+                                'Куплено',
                                 style: GoogleFonts.inter(
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
@@ -387,7 +397,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                                         ScaffoldMessenger.of(context).showSnackBar(
                                           SnackBar(
                                             content: Text(
-                                              'Unlocked "${item.title}" successfully!',
+                                              'Награда "${item.title}" успешно открыта!',
                                               style: const TextStyle(fontWeight: FontWeight.bold),
                                             ),
                                             backgroundColor: AppTheme.accentEmerald,
@@ -406,7 +416,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                                 ),
                               ),
                               child: Text(
-                                'Redeem',
+                                'Купить',
                                 style: GoogleFonts.outfit(
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,
@@ -426,7 +436,7 @@ class LoyaltyProfileTab extends StatelessWidget {
                       onPressed: () => _confirmReset(context, quizService),
                       icon: const Icon(Icons.restart_alt_rounded, size: 18, color: AppTheme.textMuted),
                       label: Text(
-                        'Reset Fan Career Data',
+                        'Сбросить прогресс карьеры',
                         style: GoogleFonts.inter(
                           fontSize: 13,
                           color: AppTheme.textMuted,
@@ -447,33 +457,38 @@ class LoyaltyProfileTab extends StatelessWidget {
   Widget _buildStatCard(String label, String value, IconData icon) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 2),
         decoration: BoxDecoration(
           color: AppTheme.surfaceCard,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(12),
           border: Border.all(color: AppTheme.surfaceBorder),
         ),
         child: Column(
           children: [
-            Icon(icon, size: 20, color: AppTheme.primary),
-            const SizedBox(height: 6),
-            Text(
-              value,
-              style: GoogleFonts.outfit(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: AppTheme.textPrimary,
+            Icon(icon, size: 18, color: AppTheme.primary),
+            const SizedBox(height: 5),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                value,
+                style: GoogleFonts.outfit(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: AppTheme.textPrimary,
+                ),
               ),
             ),
             const SizedBox(height: 2),
-            Text(
-              label,
-              style: GoogleFonts.inter(
-                fontSize: 10,
-                color: AppTheme.textSecondary,
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                label,
+                style: GoogleFonts.inter(
+                  fontSize: 9.5,
+                  color: AppTheme.textSecondary,
+                ),
+                maxLines: 1,
               ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
             ),
           ],
         ),
@@ -487,17 +502,17 @@ class LoyaltyProfileTab extends StatelessWidget {
       builder: (ctx) => AlertDialog(
         backgroundColor: AppTheme.surfaceCard,
         title: Text(
-          'Reset Fan Progress?',
+          'Сбросить прогресс?',
           style: GoogleFonts.outfit(fontWeight: FontWeight.bold, color: AppTheme.textPrimary),
         ),
         content: Text(
-          'This will reset your points balance, quizzes played, and claimed daily rewards.',
+          'Это действие обнулит баланс баллов, историю квизов и полученные награды.',
           style: GoogleFonts.inter(color: AppTheme.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
+            child: const Text('Отмена', style: TextStyle(color: AppTheme.textSecondary)),
           ),
           ElevatedButton(
             onPressed: () {
@@ -505,7 +520,7 @@ class LoyaltyProfileTab extends StatelessWidget {
               Navigator.of(ctx).pop();
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppTheme.accentRose),
-            child: const Text('Reset', style: TextStyle(color: Colors.white)),
+            child: const Text('Сбросить', style: TextStyle(color: Colors.white)),
           ),
         ],
       ),

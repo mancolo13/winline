@@ -113,7 +113,7 @@ class _SplashScreenState extends State<SplashScreen>
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'MATCH CENTER',
+                      'МАТЧ-ЦЕНТР',
                       style: GoogleFonts.outfit(
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
@@ -123,7 +123,7 @@ class _SplashScreenState extends State<SplashScreen>
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'PREMIER LEAGUE HUB & LOYALTY',
+                      'ПРЕМЬЕР-ЛИГА И КЛУБ ЛОЯЛЬНОСТИ',
                       style: GoogleFonts.inter(
                         fontSize: 11,
                         fontWeight: FontWeight.w700,
