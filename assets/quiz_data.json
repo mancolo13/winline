@@ -1,0 +1,532 @@
+{
+  "app_info": {
+    "title": "Match Center Pro",
+    "subtitle": "Premier League Match Hub & Loyalty",
+    "theme": "RPL Football Match Center & Loyalty",
+    "language": "en",
+    "version": "1.0.0"
+  },
+  "categories": [
+    {
+      "id": "clubs_derbies",
+      "title": "Clubs & Epic Derbies",
+      "description": "Historical rivalries, iconic clubs, trophies, and legendary clashes",
+      "icon": "shield",
+      "accent_color": "#FF5500",
+      "questions": [
+        {
+          "id": 101,
+          "question": "Which historic fixture is traditionally known as the 'Main Moscow Derby'?",
+          "options": [
+            "Spartak Moscow vs CSKA Moscow",
+            "Zenit St. Petersburg vs Dynamo Moscow",
+            "Lokomotiv Moscow vs Rostov",
+            "Krasnodar vs Rubin Kazan"
+          ],
+          "correct_index": 0,
+          "explanation": "The battle between Spartak Moscow and CSKA Moscow is the most fierce and historic Moscow derby.",
+          "points": 100
+        },
+        {
+          "id": 102,
+          "question": "Which club from Saint Petersburg has dominated modern championships with consecutive titles?",
+          "options": [
+            "Rubin Kazan",
+            "Zenit Saint Petersburg",
+            "Lokomotiv Moscow",
+            "Torpedo Moscow"
+          ],
+          "correct_index": 1,
+          "explanation": "Zenit Saint Petersburg established a dominant championship streak in the modern era.",
+          "points": 100
+        },
+        {
+          "id": 103,
+          "question": "What is the nickname traditionally given to CSKA Moscow due to its historic military sporting club roots?",
+          "options": [
+            "The Gladiators",
+            "The Railwaymen",
+            "The Armymen",
+            "The Bulls"
+          ],
+          "correct_index": 2,
+          "explanation": "CSKA was founded as a military sports society, earning them the nickname 'The Armymen'.",
+          "points": 100
+        },
+        {
+          "id": 104,
+          "question": "Which southern club, founded in 2008, quickly rose to the top flight with a renowned youth academy?",
+          "options": [
+            "FC Krasnodar",
+            "FC Sochi",
+            "Fakel Voronezh",
+            "Akhmat Grozny"
+          ],
+          "correct_index": 0,
+          "explanation": "FC Krasnodar was founded in 2008 and is acclaimed for its state-of-the-art academy and stadium.",
+          "points": 120
+        },
+        {
+          "id": 105,
+          "question": "Which club is known as 'The Railwaymen' due to its founding historical affiliation with the Ministry of Railways?",
+          "options": [
+            "Krylia Sovetov",
+            "Lokomotiv Moscow",
+            "Ural Yekaterinburg",
+            "Orenburg"
+          ],
+          "correct_index": 1,
+          "explanation": "Lokomotiv Moscow originated in 1922 under the railroad workers' union.",
+          "points": 100
+        },
+        {
+          "id": 106,
+          "question": "Which club broke the capital's monopoly by winning back-to-back league championships in 2008 and 2009?",
+          "options": [
+            "Alania Vladikavkaz",
+            "Rotor Volgograd",
+            "Rubin Kazan",
+            "Anzhi Makhachkala"
+          ],
+          "correct_index": 2,
+          "explanation": "Under manager Kurban Berdyev, Rubin Kazan won consecutive league titles in 2008 and 2009.",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "players_records",
+      "title": "Legends & Record Breakers",
+      "description": "Top goalscorers, legendary goalkeepers, clean sheets, and star transfers",
+      "icon": "military_tech",
+      "accent_color": "#FF8533",
+      "questions": [
+        {
+          "id": 201,
+          "question": "Which legendary goalkeeper has made over 500 appearances for CSKA and holds the league clean sheets record?",
+          "options": [
+            "Vyacheslav Malafeev",
+            "Igor Akinfeev",
+            "Sergei Ryzhikov",
+            "Soslan Dzhanaev"
+          ],
+          "correct_index": 1,
+          "explanation": "Igor Akinfeev is the undisputed record holder for most clean sheets in Russian league history.",
+          "points": 100
+        },
+        {
+          "id": 202,
+          "question": "Who holds the record for the all-time highest goal tally in Russian football top flight history?",
+          "options": [
+            "Artem Dzyuba",
+            "Aleksandr Kerzhakov",
+            "Oleg Veretennikov",
+            "Roman Pavlyuchenko"
+          ],
+          "correct_index": 0,
+          "explanation": "Artem Dzyuba holds the all-time goalscoring milestone in Russian Premier League history.",
+          "points": 120
+        },
+        {
+          "id": 203,
+          "question": "Which prolific Brazilian striker formed an iconic attacking partnership at CSKA Moscow winning the 2005 UEFA Cup?",
+          "options": [
+            "Hulk",
+            "Vagner Love",
+            "Ari",
+            "Welliton"
+          ],
+          "correct_index": 1,
+          "explanation": "Vágner Love scored pivotal goals for CSKA during their golden European and domestic campaigns.",
+          "points": 120
+        },
+        {
+          "id": 204,
+          "question": "Which powerhouse Brazilian winger terrorized defences with thunderous long-range strikes for Zenit?",
+          "options": [
+            "Malcom",
+            "Hulk",
+            "Claudinho",
+            "Douglas Santos"
+          ],
+          "correct_index": 1,
+          "explanation": "Hulk was famous for his unstoppable left-footed strikes and explosive physical play.",
+          "points": 100
+        },
+        {
+          "id": 205,
+          "question": "Which Dutch international winger became a fan idol and title winner leading Spartak Moscow's frontline?",
+          "options": [
+            "Guus Til",
+            "Quincy Promes",
+            "Royston Drenthe",
+            "Alex Kral"
+          ],
+          "correct_index": 1,
+          "explanation": "Quincy Promes scored crucial goals to guide Spartak Moscow to the 2016-17 championship.",
+          "points": 120
+        }
+      ]
+    },
+    {
+      "id": "stadiums_cities",
+      "title": "Stadiums & Match Arenas",
+      "description": "Cutting-edge arenas, host cities, architectures, and matchday atmospheres",
+      "icon": "stadium",
+      "accent_color": "#FFA726",
+      "questions": [
+        {
+          "id": 301,
+          "question": "Which ultramodern stadium in Saint Petersburg features a retractable roof and sliding pitch?",
+          "options": [
+            "Gazprom Arena",
+            "Lukoil Arena",
+            "RZD Arena",
+            "Fisht Olympic Stadium"
+          ],
+          "correct_index": 0,
+          "explanation": "Gazprom Arena on Krestovsky Island features a retractable roof allowing all-weather football.",
+          "points": 100
+        },
+        {
+          "id": 302,
+          "question": "Which stadium is famous for its panoramic 360-degree LED screen encircling the entire interior bowl?",
+          "options": [
+            "Krasnodar Stadium",
+            "VEB Arena",
+            "VTB Arena",
+            "Samara Arena"
+          ],
+          "correct_index": 0,
+          "explanation": "Krasnodar Stadium boasts a world-famous 360-degree curved LED video ribbon along the upper tier.",
+          "points": 120
+        },
+        {
+          "id": 303,
+          "question": "What is the home arena of Spartak Moscow located in the Tushino district of Moscow?",
+          "options": [
+            "VTB Arena",
+            "Lukoil Arena (formerly Otkritie)",
+            "VEB Arena",
+            "RZD Arena"
+          ],
+          "correct_index": 1,
+          "explanation": "Lukoil Arena (opened as Otkritie Arena in 2014) is Spartak Moscow's modern home fortress.",
+          "points": 100
+        },
+        {
+          "id": 304,
+          "question": "Which historic Moscow venue is unique for housing both a football stadium and an indoor hockey arena under one roof?",
+          "options": [
+            "VTB Arena (Dynamo Central Stadium)",
+            "Luzhniki Stadium",
+            "Torpedo Stadium",
+            "Lokomotiv Arena"
+          ],
+          "correct_index": 0,
+          "explanation": "VTB Arena is an innovative dual-venue complex housing both football and basketball/ice hockey.",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "tactics_rules",
+      "title": "Tactics, VAR & League Rules",
+      "description": "Match regulations, substitutions, VAR protocols, and championship tie-breakers",
+      "icon": "psychology",
+      "accent_color": "#FF7043",
+      "questions": [
+        {
+          "id": 401,
+          "question": "How many teams compete in the standard Russian Premier League championship table each season?",
+          "options": [
+            "14 teams",
+            "16 teams",
+            "18 teams",
+            "20 teams"
+          ],
+          "correct_index": 1,
+          "explanation": "The Russian Premier League format features 16 teams playing home and away (30 matchdays).",
+          "points": 100
+        },
+        {
+          "id": 402,
+          "question": "Under standard league regulations, how many player substitutions are allowed per team across 3 stoppage windows?",
+          "options": [
+            "3 substitutions",
+            "4 substitutions",
+            "5 substitutions",
+            "6 substitutions"
+          ],
+          "correct_index": 2,
+          "explanation": "Teams are permitted up to 5 substitutions in 3 stoppage intervals (excluding half-time).",
+          "points": 100
+        },
+        {
+          "id": 403,
+          "question": "In the event of a tie in points at the end of the season, what is the first tie-breaker used in the league table?",
+          "options": [
+            "Overall Goal Difference",
+            "Head-to-head records (points, wins, goal diff)",
+            "Number of goals scored away",
+            "Fair play red card count"
+          ],
+          "correct_index": 1,
+          "explanation": "Head-to-head results between the tied teams serve as the primary tie-breaking criterion.",
+          "points": 150
+        },
+        {
+          "id": 404,
+          "question": "What is the minimum distance required for defensive wall players from a direct free-kick?",
+          "options": [
+            "7.15 meters",
+            "9.15 meters (10 yards)",
+            "11.00 meters",
+            "12.50 meters"
+          ],
+          "correct_index": 1,
+          "explanation": "Defenders must maintain a distance of at least 9.15 meters (10 yards) from the ball.",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "word_puzzle",
+      "title": "Football Word Puzzle",
+      "description": "Guess essential football terms, tactical roles, and club traditions",
+      "icon": "spellcheck",
+      "accent_color": "#FF6B00",
+      "words": [
+        {
+          "word": "DERBY",
+          "hint": "A high-intensity match between two rival clubs from the same city or region",
+          "difficulty": "Easy",
+          "points": 100
+        },
+        {
+          "word": "HATTRICK",
+          "hint": "Scoring three goals in a single match by an individual player",
+          "difficulty": "Easy",
+          "points": 100
+        },
+        {
+          "word": "ARMYMEN",
+          "hint": "Traditional nickname associated with CSKA Moscow due to military heritage",
+          "difficulty": "Medium",
+          "points": 150
+        },
+        {
+          "word": "CLEANSHEET",
+          "hint": "When a goalkeeper and defense prevent the opposing team from scoring any goals",
+          "difficulty": "Medium",
+          "points": 150
+        },
+        {
+          "word": "PLAYMAKER",
+          "hint": "A creative attacking midfielder who orchestrates team offense and assists",
+          "difficulty": "Medium",
+          "points": 150
+        },
+        {
+          "word": "GLADIATORS",
+          "hint": "Symbolic moniker and statue representing Spartak Moscow outside their stadium",
+          "difficulty": "Hard",
+          "points": 200
+        },
+        {
+          "word": "CHAMPIONSHIP",
+          "hint": "The ultimate seasonal trophy awarded to the first-place team in the league table",
+          "difficulty": "Medium",
+          "points": 150
+        },
+        {
+          "word": "PENALTY",
+          "hint": "A direct kick from 11 meters awarded for a foul inside the penalty area",
+          "difficulty": "Easy",
+          "points": 100
+        }
+      ]
+    }
+  ],
+  "live_matches": [
+    {
+      "id": "match_101",
+      "home_team": "Zenit St. Petersburg",
+      "away_team": "Spartak Moscow",
+      "home_score": 2,
+      "away_score": 1,
+      "minute": "68'",
+      "status": "LIVE",
+      "stadium": "Gazprom Arena, St. Petersburg",
+      "attendance": "51,200",
+      "possession": "58% - 42%",
+      "shots_on_target": "7 - 4",
+      "corners": "5 - 3",
+      "highlights": [
+        "18' GOAL: Thunderous volley into the top corner (1-0)",
+        "41' GOAL: Equalizer from a pinpoint counter-attack (1-1)",
+        "54' GOAL: Powerful header off a curling corner (2-1)",
+        "62' YELLOW CARD: Tactical foul near the halfway line"
+      ],
+      "match_trivia": "These two giants have met over 160 times in national league history."
+    },
+    {
+      "id": "match_102",
+      "home_team": "CSKA Moscow",
+      "away_team": "Lokomotiv Moscow",
+      "home_score": 0,
+      "away_score": 0,
+      "minute": "34'",
+      "status": "LIVE",
+      "stadium": "VEB Arena, Moscow",
+      "attendance": "24,800",
+      "possession": "49% - 51%",
+      "shots_on_target": "3 - 2",
+      "corners": "2 - 4",
+      "highlights": [
+        "12' SAVE: Fantastic diving stop keeping the score level",
+        "29' FOUL: Free-kick awarded just outside the penalty box"
+      ],
+      "match_trivia": "Both teams are multi-time league champions and domestic cup winners."
+    },
+    {
+      "id": "match_103",
+      "home_team": "FC Krasnodar",
+      "away_team": "Dynamo Moscow",
+      "home_score": 3,
+      "away_score": 2,
+      "minute": "FT",
+      "status": "FINISHED",
+      "stadium": "Krasnodar Stadium, Krasnodar",
+      "attendance": "33,100",
+      "possession": "52% - 48%",
+      "shots_on_target": "8 - 6",
+      "corners": "6 - 5",
+      "highlights": [
+        "14' GOAL: Early strike inside the near post (1-0)",
+        "28' GOAL: Clinical penalty conversion (1-1)",
+        "61' GOAL: Curled finish from the edge of the box (2-1)",
+        "78' GOAL: Equalizer following a goalmouth scramble (2-2)",
+        "89' GOAL: Late winner sending the home crowd wild! (3-2)"
+      ],
+      "match_trivia": "A thrilling 5-goal spectacle featuring end-to-end attacking football."
+    },
+    {
+      "id": "match_104",
+      "home_team": "FC Rostov",
+      "away_team": "Rubin Kazan",
+      "home_score": 0,
+      "away_score": 0,
+      "minute": "20:00",
+      "status": "UPCOMING",
+      "stadium": "Rostov Arena, Rostov-on-Don",
+      "attendance": "Expected ~26,000",
+      "possession": "--",
+      "shots_on_target": "--",
+      "corners": "--",
+      "highlights": [
+        "Kickoff scheduled for tonight at 20:00 local time",
+        "Both teams fighting for upper table qualification"
+      ],
+      "match_trivia": "Rostov reached the Champions League group stage under Kurban Berdyev."
+    }
+  ],
+  "daily_challenges": [
+    {
+      "id": "daily_1",
+      "title": "Matchday Trivia Master",
+      "description": "Answer 5 trivia questions correctly in any category",
+      "reward_points": 250,
+      "progress_target": 5,
+      "icon": "military_tech"
+    },
+    {
+      "id": "daily_2",
+      "title": "Derby Tactician",
+      "description": "Complete a full quiz session in the Clubs & Derbies section",
+      "reward_points": 350,
+      "progress_target": 1,
+      "icon": "sports_soccer"
+    },
+    {
+      "id": "daily_3",
+      "title": "Clean Sheet Precision",
+      "description": "Score at least 80% accuracy in any quiz challenge",
+      "reward_points": 400,
+      "progress_target": 1,
+      "icon": "verified_user"
+    },
+    {
+      "id": "daily_4",
+      "title": "Vocabulary Striker",
+      "description": "Unscramble and solve 2 football word puzzles",
+      "reward_points": 300,
+      "progress_target": 2,
+      "icon": "spellcheck"
+    }
+  ],
+  "loyalty_store": [
+    {
+      "id": "reward_vip_pass",
+      "title": "VIP Match Pass Badge",
+      "cost": 500,
+      "icon": "confirmation_number",
+      "description": "Digital VIP pass badge granting match center priority status."
+    },
+    {
+      "id": "reward_golden_ball",
+      "title": "Golden Ball Emblem",
+      "cost": 1000,
+      "icon": "sports_soccer",
+      "description": "Prestigious golden soccer ball badge on your fan profile."
+    },
+    {
+      "id": "reward_derby_pin",
+      "title": "Signed Derby Crest",
+      "cost": 1800,
+      "icon": "shield",
+      "description": "Exclusive collector crest commemorating historic league rivalries."
+    },
+    {
+      "id": "reward_stadium_theme",
+      "title": "Floodlight Glow Style",
+      "cost": 2500,
+      "icon": "wb_incandescent",
+      "description": "Special stadium neon orange floodlight highlight across cards."
+    },
+    {
+      "id": "reward_legend_frame",
+      "title": "Premier Legend Frame",
+      "cost": 4000,
+      "icon": "military_tech",
+      "description": "Elite animated avatar frame reserved for top league scholars."
+    }
+  ],
+  "fan_ranks": [
+    {
+      "title": "Rookie Supporter",
+      "min_points": 0,
+      "perk": "Access to all standard match center fixtures and quizzes"
+    },
+    {
+      "title": "Season Ticket Holder",
+      "min_points": 500,
+      "perk": "+10% bonus loyalty points on daily matchday challenges"
+    },
+    {
+      "title": "Derby Veteran",
+      "min_points": 1500,
+      "perk": "+20% bonus points and unlocked rare store badge discounts"
+    },
+    {
+      "title": "Premier League Master",
+      "min_points": 3500,
+      "perk": "VIP icon frame and featured position on weekly leaderboard"
+    },
+    {
+      "title": "Grand Legend",
+      "min_points": 7000,
+      "perk": "All store perks unlocked with golden verified fan status"
+    }
+  ]
+}
