@@ -28,14 +28,26 @@ class DailyChallengesTab extends StatelessWidget {
               ),
             ),
             actions: [
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                decoration: BoxDecoration(
-                  color: AppTheme.surfaceCard,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: AppTheme.surfaceBorder),
-                ),
+              InkWell(
+                onTap: () {
+                  ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Баллы лояльности: ${quizService.loyaltyPoints}'),
+                      behavior: SnackBarBehavior.floating,
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                },
+                borderRadius: BorderRadius.circular(16),
+                child: Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: AppTheme.surfaceCard,
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: AppTheme.surfaceBorder),
+                  ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -51,6 +63,7 @@ class DailyChallengesTab extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
               ),
             ],
           ),
